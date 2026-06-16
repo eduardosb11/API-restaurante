@@ -1,4 +1,5 @@
 import express from "express";
+import { insertUser } from "./database/queries.js";
 
 const app = express();
 const port = 3000;
@@ -8,5 +9,5 @@ app.get("/", (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log("Listening at " + port);
+    console.log(process.env.MESSAGE);
 });
