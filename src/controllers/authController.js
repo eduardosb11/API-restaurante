@@ -1,5 +1,5 @@
 async function postLogin(req, res, next) {
-    res.send("authorized");
+    res.send();
 }
 
 export { postLogin };
